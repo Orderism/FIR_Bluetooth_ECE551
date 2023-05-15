@@ -1,0 +1,15 @@
+/filespace/c/cli649/ece551/ex2/ring_osc.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex2/ring_osc.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module ring_osc
+
+Top level modules:
+	ring_osc
+
+} {} {}} /filespace/c/cli649/ece551/ex2/ring_osc_tb.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex2/ring_osc_tb.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module ring_osc_tb
+
+Top level modules:
+	ring_osc_tb
+
+} {} {}}

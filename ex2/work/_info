@@ -1,0 +1,97 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_2 2021.06, Jun 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/filespace/c/cli649/ece551/ex1
+T_opt
+!s110 1675656818
+VeQb7a57Qo_];^aUbU:UH<0
+Z2 04 11 4 work ring_osc_tb fast 0
+=1-000ae431a4f1-63e07e71-cec98-24ea0c
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 tCvgOpt 0
+n@_opt
+Z6 OE;O;2021.2_2;73
+R1
+T_opt1
+!s110 1675656825
+VRf7e@;`34UTEm@WPN2JKA3
+04 8 4 work ring_osc fast 0
+=1-000ae431a4f1-63e07e79-3c0bc-24ea38
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+T_opt2
+!s110 1675656852
+V0zaiYbb`QFo^jPP@HG25a3
+R2
+=1-000ae431a4f1-63e07e94-47147-24eae9
+R3
+o-quiet -auto_acc_if_foreign -work work +acc
+R5
+n@_opt2
+R6
+vring_osc
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1675656760
+!i10b 1
+!s100 =ZTW<=__^<X67Ci?eaAbm3
+IJidzzIlG4;OdeVJnL_C6A1
+S1
+Z9 d/filespace/c/cli649/ece551/ex2
+w1675656744
+8/filespace/c/cli649/ece551/ex2/ring_osc.sv
+F/filespace/c/cli649/ece551/ex2/ring_osc.sv
+!i122 6
+L0 1 9
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OE;L;2021.2_2;73
+r1
+!s85 0
+31
+Z12 !s108 1675656760.000000
+!s107 /filespace/c/cli649/ece551/ex2/ring_osc.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex2/ring_osc.sv|
+!i113 0
+Z13 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+vring_osc_tb
+R7
+R8
+!i10b 1
+!s100 =B:PDVR;^j?AMhGEC1?eE1
+IPeMgRg=nLEaaMMUR425CE1
+S1
+R9
+w1675656219
+8/filespace/c/cli649/ece551/ex2/ring_osc_tb.sv
+F/filespace/c/cli649/ece551/ex2/ring_osc_tb.sv
+!i122 7
+L0 1 11
+R10
+R11
+r1
+!s85 0
+31
+R12
+!s107 /filespace/c/cli649/ece551/ex2/ring_osc_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex2/ring_osc_tb.sv|
+!i113 0
+R13
+R5
