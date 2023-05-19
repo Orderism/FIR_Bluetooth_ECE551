@@ -1,0 +1,50 @@
+/filespace/c/cli649/ece551/ex14/SPI_mnrch.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex14/SPI_mnrch.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module SPI_mnrch
+
+Top level modules:
+	SPI_mnrch
+
+} {} {}} /filespace/c/cli649/ece551/ex14/A2D_intf.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex14/A2D_intf.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module A2D_intf
+
+Top level modules:
+	A2D_intf
+
+} {} {}} /filespace/c/cli649/ece551/ex14/DriveA2D.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex14/DriveA2D.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module DriveA2D
+
+Top level modules:
+	DriveA2D
+
+} {} {}} /filespace/c/cli649/ece551/ex14/SPI_ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex14/SPI_ADC128S.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}} /filespace/c/cli649/ece551/ex14/A2D_test.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex14/A2D_test.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module A2D_test
+
+Top level modules:
+	A2D_test
+
+} {} {}} /filespace/c/cli649/ece551/ex14/PB_release.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex14/PB_release.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}} /filespace/c/cli649/ece551/ex14/ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex14/ADC128S.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module ADC128S
+
+Top level modules:
+	ADC128S
+
+} {} {}}

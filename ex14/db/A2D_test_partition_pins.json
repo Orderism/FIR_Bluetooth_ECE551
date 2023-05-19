@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LEDs[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDs[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDs[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDs[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDs[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDs[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SS_n",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI",
+					"strict" : false
+				},
+				{
+					"name" : "SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "RST_n",
+					"strict" : false
+				},
+				{
+					"name" : "nxt_chnnl",
+					"strict" : false
+				},
+				{
+					"name" : "MISO",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

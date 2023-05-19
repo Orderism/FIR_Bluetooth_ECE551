@@ -1,0 +1,13 @@
+
+State Machine - |A2D_test|A2D_intf:iA2D|cur_state
+Name cur_state.IDLE cur_state.DONE cur_state.CMD 
+cur_state.IDLE 0 0 0 
+cur_state.CMD 1 0 1 
+cur_state.DONE 1 1 0 
+
+State Machine - |A2D_test|A2D_intf:iA2D|SPI_mnrch:smn|cur_state
+Name cur_state.DONE cur_state.SHIFT cur_state.WAIT cur_state.IDLE 
+cur_state.IDLE 0 0 0 0 
+cur_state.WAIT 0 0 1 1 
+cur_state.SHIFT 0 1 0 1 
+cur_state.DONE 1 0 0 1 

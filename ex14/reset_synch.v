@@ -1,0 +1,21 @@
+module reset_synch(RST_n, rst_n, clk);
+input wire RST_n;
+input wire clk;
+output reg rst_n;
+reg temp;//the signal between 2 ff
+
+
+always@(negedge clk or negedge RST_n) begin
+if (!RST_n) begin
+rst_n <= 1'b0;
+temp <= 1'b0;
+end
+
+else begin 
+temp <= 1'b1;
+rst_n <= temp;
+end
+
+end
+
+endmodule

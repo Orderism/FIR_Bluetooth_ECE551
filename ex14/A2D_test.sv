@@ -1,0 +1,119 @@
+module A2D_test(clk,RST_n,nxt_chnnl,LEDs,SS_n,MOSI,MISO,SCLK);
+
+input clk,RST_n;		// 50MHz clock and active low unsynchronized reset from push button
+input nxt_chnnl;		// unsynchronized push button.  Advances to convert next chnnl
+output [7:0] LEDs;		// upper bits of conversion displayed on LEDs
+output SS_n;			// Active low slave select to A2D (part of SPI bus)
+output MOSI;			// Master Out Slave In to A2D (part of SPI bus)
+input MISO;				// Master In Slave Out from A2D (part of SPI bus)
+output SCLK;			// Serial clock of SPI bus
+
+
+///////////////////////////////////////////////////
+// Declare any registers or wires you need here //
+/////////////////////////////////////////////////
+wire [11:0] res;		// result of A2D conversion
+wire btn_release;
+wire SS_n,SCLK,MOSI,MISO;
+
+///
+wire rst_n;
+wire strt_cnv;
+wire [2:0]chnnl;
+wire btn_press;
+
+
+
+
+/////////////////////////////////////
+// Instantiate Reset synchronizer //
+///////////////////////////////////
+reset_synch iRST(.clk(clk), .RST_n(RST_n), .rst_n(rst_n));
+
+
+////////////////////////////////
+// Instantiate A2D Interface //
+//////////////////////////////
+A2D_intf iA2D(.clk(clk), .rst_n(rst_n), .strt_cnv(strt_cnv), .cnv_cmplt(), .chnnl(chnnl),
+              .res(res), .a2d_SS_n(SS_n), .SCLK(SCLK), .MOSI(MOSI), .MISO(MISO));
+
+///////////////////////////////////////////////
+// Instantiate push button release detector //
+/////////////////////////////////////////////
+PB_release iPB(.clk(clk), .rst_n(rst_n), .PB(nxt_chnnl), .released(btn_release));
+ 
+
+///////////////////////////////////////////////////////////////////
+// Implement method to increment channel and start a conversion //
+// with every release of the nxt_chnnl push button.            //
+////////////////////////////////////////////////////////////////
+
+//negedge btn_release detect
+/*
+reg nxt_chnnl_temp1;
+always_ff@ (posedge clk or negedge rst_n) begin
+    if(!rst_n) begin 
+        nxt_chnnl_temp1<=0;
+    end
+    else begin
+        nxt_chnnl_temp1<=nxt_chnnl;
+    end
+end
+assign btn_release= (~nxt_chnnl)&(nxt_chnnl_temp1);
+*/
+
+// chnnl increase()
+reg [2:0]chnnl_reg;
+always_ff@(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        chnnl_reg<=3'd0;
+    end
+    else if(btn_release) begin
+        chnnl_reg<=chnnl+3'd1;
+    end
+    else if(chnnl_reg==3'd7) begin
+        chnnl_reg<=3'd0;
+    end
+    else begin
+        chnnl_reg<=chnnl_reg;
+    end
+end
+assign chnnl= chnnl_reg;
+/*
+///////////////////////////////////////////
+//posedge btn_press dectect
+reg nxt_chnnl_temp2;
+always_ff@ (posedge clk or negedge rst_n) begin
+    if(!rst_n) begin 
+        nxt_chnnl_temp2<=0;
+    end
+    else begin
+        nxt_chnnl_temp2<=nxt_chnnl;
+    end
+end
+assign btn_press= (nxt_chnnl)&(nxt_chnnl_temp2);
+*/
+
+//STRT CNV assertion
+logic strt_cnv_reg;
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        strt_cnv_reg<=0;    
+    end
+    else if(btn_release) begin//still use the btn_release!!
+        strt_cnv_reg<=1;
+    end
+    else begin
+        strt_cnv_reg<=0;
+    end
+end
+assign strt_cnv=strt_cnv_reg;
+
+
+
+/// Upper 4-bits of LED are upper 4-bits ///
+/// of A2D, lower 3 are count /////////////
+assign LEDs = {res[11:8],1'b0,chnnl};
+
+endmodule
+    
