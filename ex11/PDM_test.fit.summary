@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Feb 24 12:24:06 2023
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : PDM_test
+Top-level Entity Name : PDM_test
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 55 / 22,320 ( < 1 % )
+    Total combinational functions : 39 / 22,320 ( < 1 % )
+    Dedicated logic registers : 52 / 22,320 ( < 1 % )
+Total registers : 52
+Total pins : 15 / 154 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

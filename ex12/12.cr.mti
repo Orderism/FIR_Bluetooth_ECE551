@@ -1,0 +1,15 @@
+/filespace/c/cli649/ece551/ex12/SPI_ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex12/SPI_ADC128S.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}} /filespace/c/cli649/ece551/ex12/ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex12/ADC128S.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module ADC128S
+
+Top level modules:
+	ADC128S
+
+} {} {}}

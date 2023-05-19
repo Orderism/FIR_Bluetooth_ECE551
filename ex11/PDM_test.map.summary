@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Feb 24 12:23:59 2023
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : PDM_test
+Top-level Entity Name : PDM_test
+Family : Cyclone IV E
+Total logic elements : 63
+    Total combinational functions : 38
+    Dedicated logic registers : 52
+Total registers : 52
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,85 @@
+/filespace/c/cli649/ece551/ex11/reset_synch.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex11/reset_synch.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module reset_synch
+
+Top level modules:
+	reset_synch
+
+} {} {}} I:/ece551/ex11/PDM_tb.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex11/PDM_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module PDM_tb
+
+Top level modules:
+	PDM_tb
+
+} {} {}} /filespace/c/cli649/ece551/ex11/PDM_test.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex11/PDM_test.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PDM_test
+
+Top level modules:
+	PDM_test
+
+} {} {}} /filespace/c/cli649/ece551/ex11/PDM.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex11/PDM.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PDM
+
+Top level modules:
+	PDM
+
+} {} {}} I:/ece551/ex11/up_dwn_cnt4.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex11/up_dwn_cnt4.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module up_dwn_cnt4
+
+Top level modules:
+	up_dwn_cnt4
+
+} {} {}} /filespace/c/cli649/ece551/ex11/PB_release.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex11/PB_release.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}} I:/ece551/ex11/reset_synch.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex11/reset_synch.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module reset_synch
+
+Top level modules:
+	reset_synch
+
+} {} {}} I:/ece551/ex11/PDM_test.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex11/PDM_test.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module PDM_test
+
+Top level modules:
+	PDM_test
+
+} {} {}} I:/ece551/ex11/PDM.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece551\ex11\PDM.sv}
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module PDM
+
+Top level modules:
+	PDM
+
+} {} {}} I:/ece551/ex11/PB_release.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex11/PB_release.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}} /filespace/c/cli649/ece551/ex11/PDM_test_ERIC.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex11/PDM_test_ERIC.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PDM_test
+
+Top level modules:
+	PDM_test
+
+} {} {}} /filespace/c/cli649/ece551/ex11/up_dwn_cnt4.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex11/up_dwn_cnt4.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module up_dwn_cnt4
+
+Top level modules:
+	up_dwn_cnt4
+
+} {} {}}
