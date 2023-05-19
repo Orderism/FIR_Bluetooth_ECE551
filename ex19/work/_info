@@ -1,0 +1,424 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_2 2021.06, Jun 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/filespace/c/cli649/ece551/HW4/HW4_5
+T_opt
+!s110 1681947299
+VI[>PTRMg8RZQMh?JP=3eP3
+Z2 04 13 4 work slide_intf_tb fast 0
+=1-000ae431a4f1-64407aa2-eb54c-15cc15
+!s124 OEM100
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+OE;O;2021.2_2;73
+T_opt1
+!s110 1680890432
+VG:JS2L4PCA^Jk>0ASLjWb2
+04 11 4 work I2S_Serf_tb fast 0
+=1-6c2b59d179cc-64305a3f-2cd-95c
+R3
+n@_opt1
+Z5 OE;O;10.3c;59
+R1
+T_opt2
+!s110 1680890386
+Vh4>hgkWcbTS[SI6<]TPdD0
+R2
+=1-6c2b59d179cc-64305a11-37f-26c4
+R3
+n@_opt2
+R5
+R1
+vA2D_intf
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 !s110 1681946188
+!i10b 1
+!s100 2?ZZ`?D6Ioh272iKOF?_o1
+I9Q1I=bcAo`cQaS4zWgL6:2
+S1
+Z8 d/filespace/c/cli649/ece551/ex19
+w1678838992
+8/filespace/c/cli649/ece551/ex19/A2D_intf.sv
+F/filespace/c/cli649/ece551/ex19/A2D_intf.sv
+!i122 3
+L0 14 130
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OE;L;2021.2_2;73
+r1
+!s85 0
+31
+Z11 !s108 1681946188.000000
+!s107 /filespace/c/cli649/ece551/ex19/A2D_intf.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/A2D_intf.sv|
+!i113 0
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@a2@d_intf
+vA2D_with_Pots
+R6
+R7
+!i10b 1
+!s100 1``fN@I9lS0RlgkELQH]j2
+IijGVi6^;Pa?ILcUUFb6jU2
+S1
+R8
+w1680648058
+8/filespace/c/cli649/ece551/ex19/A2D_with_Pots.sv
+F/filespace/c/cli649/ece551/ex19/A2D_with_Pots.sv
+!i122 4
+L0 1 111
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /filespace/c/cli649/ece551/ex19/A2D_with_Pots.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/A2D_with_Pots.sv|
+!i113 0
+R12
+R4
+n@a2@d_with_@pots
+vADC128S
+R6
+!s110 1680649703
+!i10b 1
+!s100 i34E_Xcnm_^anMBVfZk551
+IlRfB:79f35mF<HzLJggZf0
+S1
+R8
+w1677870247
+8/filespace/c/cli649/ece551/ex19/ADC128S.sv
+F/filespace/c/cli649/ece551/ex19/ADC128S.sv
+!i122 2
+L0 1 110
+R9
+R10
+r1
+!s85 0
+31
+!s108 1680649703.000000
+!s107 /filespace/c/cli649/ece551/ex19/ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/ADC128S.sv|
+!i113 0
+R12
+R4
+n@a@d@c128@s
+vEqualizerMinusEQ
+Z13 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z14 !s110 1680888612
+!i10b 1
+!s100 UP?TlZdR2>^7_hBSioha?2
+I?5?GF[aa5>jeRjlP^6V8=1
+Z15 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 EqualizerMinusEQ_sv_unit
+S1
+Z16 dI:/ece551/ex19
+w1680888514
+8I:\ece551\ex18\EqualizerMinusEQ.sv
+FI:\ece551\ex18\EqualizerMinusEQ.sv
+L0 1
+Z17 OE;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1680888612.696000
+!s107 I:\ece551\ex18\EqualizerMinusEQ.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:\ece551\ex18\EqualizerMinusEQ.sv|
+!i113 0
+Z18 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@equalizer@minus@e@q
+vI2S_Monarch
+R6
+R7
+!i10b 1
+!s100 IWW^mDe>4zWlB4d<WL`^^3
+InMO0ze189a`QkmNh@fbG70
+S1
+R8
+w1675182892
+8/filespace/c/cli649/ece551/ex19/I2S_Monarch.sv
+F/filespace/c/cli649/ece551/ex19/I2S_Monarch.sv
+!i122 5
+L0 1 141
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /filespace/c/cli649/ece551/ex19/I2S_Monarch.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/I2S_Monarch.sv|
+!i113 0
+R12
+R4
+n@i2@s_@monarch
+vI2S_Serf
+R13
+!s110 1680890372
+!i10b 1
+!s100 31DXlZg;?Qj[F6143gcb]1
+I5aYIcYOGFz_l8lffiGhk_2
+R15
+!s105 I2S_Serf_sv_unit
+S1
+R16
+w1680890351
+8I:\ece551\ex18\I2S_Serf.sv
+FI:\ece551\ex18\I2S_Serf.sv
+L0 1
+R17
+r1
+!s85 0
+31
+!s108 1680890371.881000
+!s107 I:\ece551\ex18\I2S_Serf.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:\ece551\ex18\I2S_Serf.sv|
+!i113 0
+R18
+n@i2@s_@serf
+vI2S_Serf_tb
+R13
+Z19 !s110 1680888613
+!i10b 1
+!s100 aj>UUV84>Qh]3Kh`4a@^C1
+I^iSncnFHT>Kbfdl3MVMm]1
+R15
+!s105 I2S_Serf_tb_sv_unit
+S1
+R16
+w1679947312
+8I:/ece551/ex18/I2S_Serf_tb.sv
+FI:/ece551/ex18/I2S_Serf_tb.sv
+L0 1
+R17
+r1
+!s85 0
+31
+!s108 1680888613.380000
+!s107 I:/ece551/ex18/I2S_Serf_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex18/I2S_Serf_tb.sv|
+!i113 0
+R18
+n@i2@s_@serf_tb
+vPDM
+R13
+R19
+!i10b 1
+!s100 `zm:ok^670RPA^_?m_HXf2
+IdW]m69Aac^bi3j6Dme`I_2
+R15
+!s105 PDM_sv_unit
+S1
+R16
+w1677263404
+8I:/ece551/ex18/PDM.sv
+FI:/ece551/ex18/PDM.sv
+L0 1
+R17
+r1
+!s85 0
+31
+!s108 1680888613.722000
+!s107 I:/ece551/ex18/PDM.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex18/PDM.sv|
+!i113 0
+R18
+n@p@d@m
+vrst_synch
+Z20 !s110 1680888614
+!i10b 1
+!s100 Wc[ZNLYfLnT3U>bK>B?:l3
+I::Q;f7Fo4TRcR93=]j`5V0
+R15
+R16
+w1680540827
+8I:/ece551/ex18/rst_synch.v
+FI:/ece551/ex18/rst_synch.v
+L0 1
+R17
+r1
+!s85 0
+31
+!s108 1680888614.081000
+!s107 I:/ece551/ex18/rst_synch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/ex18/rst_synch.v|
+!i113 0
+Z21 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vslide_intf
+R6
+R7
+!i10b 1
+!s100 020>N>K_>I94hN3cK>^`53
+IO3fI=h=aM>Ngk67[noj6F3
+S1
+R8
+w1681490250
+8/filespace/c/cli649/ece551/ex19/slide_intf.sv
+F/filespace/c/cli649/ece551/ex19/slide_intf.sv
+!i122 6
+L0 1 138
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /filespace/c/cli649/ece551/ex19/slide_intf.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/slide_intf.sv|
+!i113 0
+R12
+R4
+vslide_intf_tb
+R6
+!s110 1681947285
+!i10b 1
+!s100 Ef<@FOkiM_6F54`Vh8?Oc0
+I>g=Qc5ICV3HojZejEJ1c^3
+S1
+R8
+w1681947274
+8/filespace/c/cli649/ece551/ex19/slide_intf_tb.sv
+F/filespace/c/cli649/ece551/ex19/slide_intf_tb.sv
+!i122 14
+L0 1 74
+R9
+R10
+r1
+!s85 0
+31
+!s108 1681947285.000000
+!s107 /filespace/c/cli649/ece551/ex19/slide_intf_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/slide_intf_tb.sv|
+!i113 0
+R12
+R4
+vSPI_ADC128S
+R6
+R7
+!i10b 1
+!s100 93oj0i;UV@::cHMPGHMJ>1
+I6?ImCezP@M=^;8>M4gjZf1
+S1
+R8
+w1680649743
+8/filespace/c/cli649/ece551/ex19/SPI_ADC128S.sv
+F/filespace/c/cli649/ece551/ex19/SPI_ADC128S.sv
+!i122 8
+L0 1 140
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /filespace/c/cli649/ece551/ex19/SPI_ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/SPI_ADC128S.sv|
+!i113 0
+R12
+R4
+n@s@p@i_@a@d@c128@s
+vSPI_mnrch
+R6
+!s110 1681946189
+!i10b 1
+!s100 bT?95aD57mc1f5hY?]2F?1
+IRWTZB;OgF`L:D<mANS3:D1
+S1
+R8
+w1677881814
+8/filespace/c/cli649/ece551/ex19/SPI_mnrch.sv
+F/filespace/c/cli649/ece551/ex19/SPI_mnrch.sv
+!i122 9
+L0 1 288
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 /filespace/c/cli649/ece551/ex19/SPI_mnrch.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/c/cli649/ece551/ex19/SPI_mnrch.sv|
+!i113 0
+R12
+R4
+n@s@p@i_mnrch
+vspkr_drv
+R13
+R14
+!i10b 1
+!s100 bgh0OhKkMZ?9<SAX:H4Ef1
+IPeJ]^<8d]dSUgD?Viaj^G3
+R15
+!s105 spkr_drv_sv_unit
+S1
+R16
+w1680023266
+8I:/ece551/ex18/spkr_drv.sv
+FI:/ece551/ex18/spkr_drv.sv
+L0 1
+R17
+r1
+!s85 0
+31
+!s108 1680888612.354000
+!s107 I:/ece551/ex18/spkr_drv.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex18/spkr_drv.sv|
+!i113 0
+R18
+vtone_ROM_lft
+R20
+!i10b 1
+!s100 1H^IMVM>V_fkZ<YB6:`X;1
+IB@]_zSkNnV`AV8e?lkAJe2
+R15
+R16
+w1553010354
+8I:/ece551/ex19/tone_ROM_lft.v
+FI:/ece551/ex19/tone_ROM_lft.v
+L0 1
+R17
+r1
+!s85 0
+31
+!s108 1680888614.713000
+!s107 I:/ece551/ex19/tone_ROM_lft.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/ex19/tone_ROM_lft.v|
+!i113 0
+R21
+ntone_@r@o@m_lft
+vtone_ROM_rght
+!s110 1680888615
+!i10b 1
+!s100 <zn8]6R;^fB<gQnY=@FJ>2
+I7f13e1m_eTT1TH[Q:YSHS1
+R15
+R16
+w1553010554
+8I:/ece551/ex19/tone_ROM_rght.v
+FI:/ece551/ex19/tone_ROM_rght.v
+L0 1
+R17
+r1
+!s85 0
+31
+!s108 1680888615.062000
+!s107 I:/ece551/ex19/tone_ROM_rght.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/ex19/tone_ROM_rght.v|
+!i113 0
+R21
+ntone_@r@o@m_rght

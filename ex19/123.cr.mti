@@ -1,0 +1,36 @@
+/filespace/c/cli649/ece551/ex19/slide_intf_tb.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex19/slide_intf_tb.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module slide_intf_tb
+
+Top level modules:
+	slide_intf_tb
+
+} {} {}} /filespace/c/cli649/ece551/ex19/A2D_intf.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex19/A2D_intf.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module A2D_intf
+
+Top level modules:
+	A2D_intf
+
+} {} {}} /filespace/c/cli649/ece551/ex19/A2D_with_Pots.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex19/A2D_with_Pots.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module A2D_with_Pots
+
+Top level modules:
+	A2D_with_Pots
+
+} {} {}} /filespace/c/cli649/ece551/ex19/SPI_mnrch.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex19/SPI_mnrch.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module SPI_mnrch
+
+Top level modules:
+	SPI_mnrch
+
+} {} {}} /filespace/c/cli649/ece551/ex19/SPI_ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex19/SPI_ADC128S.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}}
