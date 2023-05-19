@@ -1,0 +1,55 @@
+read_file -format sverilog {ROM_B1.v, ROM_B2.v, ROM_B3.v, ROM_HP.v, ROM_LP.v, dualPort1024x16.v, dualPort1536x16.v, PB_release.sv, SPI_mnrch_RAIN.sv, cmdROM.v, UART.sv, snd_cmd_RAIN.sv, A2D_intf_RAIN.sv, FIR_B1_DUSAN.sv, FIR_B2_DUSAN.sv, FIR_B3_DUSAN.sv, FIR_HP_DUSAN.sv, FIR_LP_DUSAN.sv, band_scale_RAIN.sv, low_freq_queue.sv, high_freq_queue.sv, PDM_RAIN.sv, rst_synch.sv, BT_intf_RAIN.sv, I2S_Serf_RAIN.sv, slide_intf_RAIN.sv, EQ_Engine_RAIN.sv, spkr_drv.sv, Equalizer.sv}
+current_design Equalizer
+link
+
+##############################
+# Constrain and assign clock #
+##############################
+create_clock -name "clk" -period 3 {clk}
+set_dont_touch_network [find port clk]
+
+##############################################
+# Constrain input timings and Drive strength #
+##############################################
+set prim_inputs [remove_from_collection [all_inputs] [find port clk]]
+set_input_delay -clock clk 0.75 $prim_inputs
+set_driving_cell -lib_cell NAND2X1_LVT -library\
+		     saed32lvt_tt0p85v25c $prim_inputs
+##set_drive 0.0001 rst_n
+set_drive 0.0001 RST_n
+#####################################
+# Constrain output timings and load #
+#####################################
+set_output_delay -clock clk 0.75 [all_outputs]
+set_load 50 [all_outputs]
+
+##################################
+# Set wireload & transition time #
+##################################
+set_wire_load_model -name 16000 -library saed32lvt_tt0p85v25c
+set_max_transition 0.125 [current_design]
+
+
+
+###########
+# Compile #
+###########
+compile 
+set_clock_uncertainty 0.125 clk
+##########################
+#####################
+# Flatten hierarchy #
+#####################
+set_fix_hold clk
+ungroup -all -flatten
+compile 
+
+
+check_design
+#######################
+# reports and netlist #
+#######################
+report_timing -delay min
+report_timing -delay max
+report_area > Equalizer_Area.txt
+write -format verilog Equalizer -output Equalizer.vg

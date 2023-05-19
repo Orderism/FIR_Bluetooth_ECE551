@@ -1,0 +1,185 @@
+# //  Questa Sim
+# //  Version 2021.2_2 linux Jun 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project sada
+# Load canceled
+# reading /cae/apps/data/mentor-2022/questasim/linux/../modelsim.ini
+# Loading project DSAD
+# Compile of A2D_intf_RAIN.sv was successful.
+# Compile of A2D_with_Pots.sv was successful.
+# Compile of ADC128S.sv was successful.
+# Compile of band_scale_RAIN.sv was successful.
+# Compile of BT_intf_RAIN.sv was successful.
+# Compile of BT_intf_tb.sv was successful.
+# Compile of cmdROM.v was successful.
+# Compile of dualPort1024x16.v was successful.
+# Compile of dualPort1536x16.v was successful.
+# Compile of EQ_Engine_RAIN.sv was successful.
+# Compile of Equalizer.sv was successful.
+# Compile of Equalizer_tb_RAIN.sv was successful.
+# Compile of FIR_B1_DUSAN.sv was successful.
+# Compile of FIR_B2_DUSAN.sv was successful.
+# Compile of FIR_B2_tb.sv was successful.
+# Compile of FIR_B3_DUSAN.sv was successful.
+# Compile of FIR_HP_DUSAN.sv was successful.
+# Compile of FIR_LP_DUSAN.sv was successful.
+# Compile of high_freq_queue.sv was successful.
+# Compile of I2S_Mnrch.sv was successful.
+# Compile of I2S_Serf_RAIN.sv was successful.
+# Compile of LED_drv.sv was successful.
+# Compile of low_freq_queue.sv was successful.
+# Compile of PB_release.sv was successful.
+# Compile of PDM_RAIN.sv was successful.
+# Compile of resp_ROM.v was successful.
+# Compile of RN52.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of ROM_B1.v was successful.
+# Compile of ROM_B2.v was successful.
+# Compile of ROM_B3.v was successful.
+# Compile of ROM_HP.v was successful.
+# Compile of ROM_LP.v was successful.
+# Compile of rst_synch.sv was successful.
+# Compile of slide_intf_RAIN.sv was successful.
+# Compile of snd_cmd_RAIN.sv was successful.
+# Compile of SPI_ADC128S.sv was successful.
+# Compile of SPI_mnrch_RAIN.sv was successful.
+# Compile of SPI_mnrch_tb.sv was successful.
+# Compile of spkr_drv.sv was successful.
+# Compile of tone_ROM_lft.v was successful.
+# Compile of tone_ROM_rght.v was successful.
+# Compile of UART.sv was successful.
+# 43 compiles, 0 failed with no errors.
+vsim work.BT_intf_tb -voptargs=+acc
+# vsim work.BT_intf_tb -voptargs="+acc" 
+# Start time: 18:53:38 on May 14,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "I2S_Serf(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "RN52(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "bt_intf(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "snd_cmd(fast)".
+# ** Warning: /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv(11): (vopt-2685) [TFMPC] - Too few port connections for 'BT_RN_52'.  Expected 9, found 8.
+# ** Warning: /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv(11): (vopt-2718) [TFMPC] - Missing connection for port 'song'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.BT_intf_tb(fast)
+# Loading work.bt_intf(fast)
+# Loading work.PB_release(fast)
+# Loading work.snd_cmd(fast)
+# Loading work.cmdROM(fast)
+# Loading work.UART(fast)
+# Loading work.RN52(fast)
+# Loading work.resp_ROM(fast)
+# Loading work.I2S_Mnrch(fast)
+# Loading work.tone_ROM_lft(fast)
+# Loading work.tone_ROM_rght(fast)
+# Loading work.I2S_Serf(fast)
+add wave -position insertpoint sim:/BT_intf_tb/*
+run -all
+# ** Note: $stop    : /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv(45)
+#    Time: 11000045 ns  Iteration: 1  Instance: /BT_intf_tb
+# Break in Module BT_intf_tb at /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv line 45
+# Causality operation skipped due to absence of debug database file
+quit -sim
+# End time: 18:54:44 on May 14,2023, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 7
+# Load canceled
+# Compile of A2D_intf_RAIN.sv was successful.
+# Compile of A2D_with_Pots.sv was successful.
+# Compile of ADC128S.sv was successful.
+# Compile of band_scale_RAIN.sv was successful.
+# Compile of BT_intf_RAIN.sv was successful.
+# Compile of BT_intf_tb.sv was successful.
+# Compile of cmdROM.v was successful.
+# Compile of dualPort1024x16.v was successful.
+# Compile of dualPort1536x16.v was successful.
+# Compile of EQ_Engine_RAIN.sv was successful.
+# Compile of Equalizer.sv was successful.
+# Compile of Equalizer_tb_RAIN.sv was successful.
+# Compile of FIR_B1_DUSAN.sv was successful.
+# Compile of FIR_B2_DUSAN.sv was successful.
+# Compile of FIR_B2_tb.sv was successful.
+# Compile of FIR_B3_DUSAN.sv was successful.
+# Compile of FIR_HP_DUSAN.sv was successful.
+# Compile of FIR_LP_DUSAN.sv was successful.
+# Compile of high_freq_queue.sv was successful.
+# Compile of I2S_Mnrch.sv was successful.
+# Compile of I2S_Serf_RAIN.sv was successful.
+# Compile of LED_drv.sv was successful.
+# Compile of low_freq_queue.sv was successful.
+# Compile of PB_release.sv was successful.
+# Compile of PDM_RAIN.sv was successful.
+# Compile of resp_ROM.v was successful.
+# Compile of RN52.sv was successful.
+# Compile of ROM.sv was successful.
+# Compile of ROM_B1.v was successful.
+# Compile of ROM_B2.v was successful.
+# Compile of ROM_B3.v was successful.
+# Compile of ROM_HP.v was successful.
+# Compile of ROM_LP.v was successful.
+# Compile of rst_synch.sv was successful.
+# Compile of slide_intf_RAIN.sv was successful.
+# Compile of snd_cmd_RAIN.sv was successful.
+# Compile of SPI_ADC128S.sv was successful.
+# Compile of SPI_mnrch_RAIN.sv was successful.
+# Compile of SPI_mnrch_tb.sv was successful.
+# Compile of spkr_drv.sv was successful.
+# Compile of tone_ROM_lft.v was successful.
+# Compile of tone_ROM_rght.v was successful.
+# Compile of UART.sv was successful.
+# 43 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.BT_intf_tb
+# vsim -voptargs="+acc" work.BT_intf_tb 
+# Start time: 18:59:51 on May 14,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "bt_intf(fast)".
+# Loading sv_std.std
+# Loading work.BT_intf_tb(fast)
+# Loading work.bt_intf(fast)
+# Loading work.PB_release(fast)
+# Loading work.snd_cmd(fast)
+# Loading work.cmdROM(fast)
+# Loading work.UART(fast)
+# Loading work.RN52(fast)
+# Loading work.resp_ROM(fast)
+# Loading work.I2S_Mnrch(fast)
+# Loading work.tone_ROM_lft(fast)
+# Loading work.tone_ROM_rght(fast)
+# Loading work.I2S_Serf(fast)
+run -all
+# ** Note: $stop    : /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv(45)
+#    Time: 11000045 ns  Iteration: 1  Instance: /BT_intf_tb
+# Break in Module BT_intf_tb at /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv line 45
+add wave -position insertpoint sim:/BT_intf_tb/*
+# Break key hit
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.BT_intf_tb(fast)
+# Loading work.bt_intf(fast)
+# Loading work.PB_release(fast)
+# Loading work.snd_cmd(fast)
+# Loading work.cmdROM(fast)
+# Loading work.UART(fast)
+# Loading work.RN52(fast)
+# Loading work.resp_ROM(fast)
+# Loading work.I2S_Mnrch(fast)
+# Loading work.tone_ROM_lft(fast)
+# Loading work.tone_ROM_rght(fast)
+# Loading work.I2S_Serf(fast)
+run -all
+# ** Note: $stop    : /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv(45)
+#    Time: 11000045 ns  Iteration: 1  Instance: /BT_intf_tb
+# Break in Module BT_intf_tb at /filespace/c/cli649/ece551/JUSTEST/BT_intf_tb.sv line 45
+# End time: 19:07:33 on May 14,2023, Elapsed time: 0:07:42
+# Errors: 0, Warnings: 1
