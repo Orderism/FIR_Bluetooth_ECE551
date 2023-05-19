@@ -1,0 +1,268 @@
+I:/ece551/ex23/ROM_B3.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/ROM_B3.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ROM_B3
+
+Top level modules:
+	ROM_B3
+
+} {} {}} I:/ece551/ex23/A2D_with_Pots.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/A2D_with_Pots.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module A2D_with_Pots
+
+Top level modules:
+	A2D_with_Pots
+
+} {} {}} I:/ece551/ex23/Equalizer_tb.sv {0 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/Equalizer_tb.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module Equalizer_tb
+** Error: I:/ece551/ex23/Equalizer_tb.sv(39): near "where": syntax error, unexpected IDENTIFIER, expecting '('
+
+} {4.0 5.0} {}} I:/ece551/ex23/ROM_HP.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/ROM_HP.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ROM_HP
+
+Top level modules:
+	ROM_HP
+
+} {} {}} I:/ece551/ex23/Equalizer.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/Equalizer.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module Equalizer
+
+Top level modules:
+	Equalizer
+
+} {} {}} I:/ece551/ex23/tone_ROM_rght.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/tone_ROM_rght.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module tone_ROM_rght
+
+Top level modules:
+	tone_ROM_rght
+
+} {} {}} I:/ece551/ex23/resp_ROM.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/resp_ROM.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module resp_ROM
+
+Top level modules:
+	resp_ROM
+
+} {} {}} I:/ece551/ex23/UART.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/UART.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module UART
+
+Top level modules:
+	UART
+
+} {} {}} I:/ece551/ex23/FIR_B2.sv {0 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/FIR_B2.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module FIR_B2
+** Error: I:/ece551/ex23/FIR_B2.sv(15): (vlog-2730) Undefined variable: 'addr_rst'.
+
+** Error: I:/ece551/ex23/FIR_B2.sv(18): (vlog-2730) Undefined variable: 'addr_inc'.
+
+** Error: I:/ece551/ex23/FIR_B2.sv(35): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_B2.sv(38): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_B2.sv(50): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_B2.sv(53): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_B2.sv(73): (vlog-2730) Undefined variable: 'nxt_satate'.
+
+** Error: I:/ece551/ex23/FIR_B2.sv(77): near ")": syntax error, unexpected ')'
+** Error: I:/ece551/ex23/FIR_B2.sv(87): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B2.sv(91): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B2.sv(98): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B2.sv(107): near "end": syntax error, unexpected end
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 23.0} {}} I:/ece551/ex23/tone_ROM_lft.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/tone_ROM_lft.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module tone_ROM_lft
+
+Top level modules:
+	tone_ROM_lft
+
+} {} {}} I:/ece551/ex23/ROM_LP.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/ROM_LP.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ROM_LP
+
+Top level modules:
+	ROM_LP
+
+} {} {}} I:/ece551/ex23/ROM.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/ROM.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ROM
+
+Top level modules:
+	ROM
+
+} {} {}} I:/ece551/ex23/RN52.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/RN52.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module RN52
+
+Top level modules:
+	RN52
+
+} {} {}} I:/ece551/ex23/cmdROM.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/cmdROM.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cmdROM
+
+Top level modules:
+	cmdROM
+
+} {} {}} I:/ece551/ex23/FIR_HP.sv {0 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/FIR_HP.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module FIR_HP
+** Error: I:/ece551/ex23/FIR_HP.sv(15): (vlog-2730) Undefined variable: 'addr_rst'.
+
+** Error: I:/ece551/ex23/FIR_HP.sv(18): (vlog-2730) Undefined variable: 'addr_inc'.
+
+** Error: I:/ece551/ex23/FIR_HP.sv(35): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_HP.sv(38): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_HP.sv(50): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_HP.sv(53): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_HP.sv(73): (vlog-2730) Undefined variable: 'nxt_satate'.
+
+** Error: I:/ece551/ex23/FIR_HP.sv(77): near ")": syntax error, unexpected ')'
+** Error: I:/ece551/ex23/FIR_HP.sv(87): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_HP.sv(91): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_HP.sv(98): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_HP.sv(107): near "end": syntax error, unexpected end
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 23.0} {}} I:/ece551/ex23/SPI_ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/SPI_ADC128S.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}} I:/ece551/ex23/spkr_drv.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/spkr_drv.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module spkr_drv
+
+Top level modules:
+	spkr_drv
+
+} {} {}} I:/ece551/ex23/EQ_Engine.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/EQ_Engine.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module EQ_engine
+
+Top level modules:
+	EQ_engine
+
+} {} {}} I:/ece551/ex23/FIR_B1.sv {0 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/FIR_B1.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module FIR_B1
+** Error: I:/ece551/ex23/FIR_B1.sv(15): (vlog-2730) Undefined variable: 'addr_rst'.
+
+** Error: I:/ece551/ex23/FIR_B1.sv(18): (vlog-2730) Undefined variable: 'addr_inc'.
+
+** Error: I:/ece551/ex23/FIR_B1.sv(35): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_B1.sv(38): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_B1.sv(50): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_B1.sv(53): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_B1.sv(73): (vlog-2730) Undefined variable: 'nxt_satate'.
+
+** Error: I:/ece551/ex23/FIR_B1.sv(77): near ")": syntax error, unexpected ')'
+** Error: I:/ece551/ex23/FIR_B1.sv(87): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B1.sv(91): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B1.sv(98): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B1.sv(107): near "end": syntax error, unexpected end
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 23.0} {}} I:/ece551/ex23/FIR_LP.sv {0 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/FIR_LP.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module FIR_LP
+** Error: I:/ece551/ex23/FIR_LP.sv(15): (vlog-2730) Undefined variable: 'addr_rst'.
+
+** Error: I:/ece551/ex23/FIR_LP.sv(18): (vlog-2730) Undefined variable: 'addr_inc'.
+
+** Error: I:/ece551/ex23/FIR_LP.sv(35): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_LP.sv(38): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_LP.sv(50): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_LP.sv(53): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_LP.sv(73): (vlog-2730) Undefined variable: 'nxt_satate'.
+
+** Error: I:/ece551/ex23/FIR_LP.sv(77): near ")": syntax error, unexpected ')'
+** Error: I:/ece551/ex23/FIR_LP.sv(87): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_LP.sv(91): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_LP.sv(98): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_LP.sv(107): near "end": syntax error, unexpected end
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 23.0} {}} I:/ece551/ex23/ROM_B1.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/ROM_B1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ROM_B1
+
+Top level modules:
+	ROM_B1
+
+} {} {}} I:/ece551/ex23/I2S_Mnrch.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/I2S_Mnrch.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module I2S_Mnrch
+
+Top level modules:
+	I2S_Mnrch
+
+} {} {}} I:/ece551/ex23/FIR_B3.sv {0 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/FIR_B3.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module FIR_B3
+** Error: I:/ece551/ex23/FIR_B3.sv(15): (vlog-2730) Undefined variable: 'addr_rst'.
+
+** Error: I:/ece551/ex23/FIR_B3.sv(18): (vlog-2730) Undefined variable: 'addr_inc'.
+
+** Error: I:/ece551/ex23/FIR_B3.sv(35): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_B3.sv(38): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_B3.sv(50): (vlog-2730) Undefined variable: 'clear_out'.
+
+** Error: I:/ece551/ex23/FIR_B3.sv(53): (vlog-2730) Undefined variable: 'accum'.
+
+** Error: I:/ece551/ex23/FIR_B3.sv(73): (vlog-2730) Undefined variable: 'nxt_satate'.
+
+** Error: I:/ece551/ex23/FIR_B3.sv(77): near ")": syntax error, unexpected ')'
+** Error: I:/ece551/ex23/FIR_B3.sv(87): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B3.sv(91): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B3.sv(98): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+** Error: I:/ece551/ex23/FIR_B3.sv(107): near "end": syntax error, unexpected end
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 23.0} {}} I:/ece551/ex23/ROM_B2.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/ROM_B2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ROM_B2
+
+Top level modules:
+	ROM_B2
+
+} {} {}} I:/ece551/ex23/ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/ADC128S.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ADC128S
+
+Top level modules:
+	ADC128S
+
+} {} {}} I:/ece551/ex23/dualPort1024x16.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/dualPort1024x16.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module dualPort1024x16
+
+Top level modules:
+	dualPort1024x16
+
+} {} {}} I:/ece551/ex23/dualPort1536x16.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex23/dualPort1536x16.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module dualPort1536x16
+
+Top level modules:
+	dualPort1536x16
+
+} {} {}}

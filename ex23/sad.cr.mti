@@ -1,0 +1,8 @@
+I:/ece551/ex23/EQ_Engine.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex23/EQ_Engine.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module EQ_engine
+
+Top level modules:
+	EQ_engine
+
+} {} {}}

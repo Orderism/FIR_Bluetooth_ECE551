@@ -1,0 +1,114 @@
+module FIR_B3(sequencing, clk, rst_n, lft_in, rght_in, lft_out, rght_out);
+input logic sequencing, clk, rst_n;
+input signed [15:0] lft_in,rght_in;
+output wire [15:0]lft_out, rght_out;
+
+//ROM out
+wire [15:0] ROM_out;
+ROM_B3 ROM_B3(.clk(clk), .addr(addr), .dout(ROM_out));
+
+//addr increasing ff
+
+always_ff @(posedge clk or negedge rst_n) begin
+		if (!rst_n) 
+			addr<='0;
+		else if(addr_rst) //from the cntrl SM
+			addr<=10'h000;
+		else begin//addr_rst=1
+			if(addr_inc) 
+				addr<=addr+110'd1;
+			else 
+				addr<=addr;
+		end
+end
+
+//multiplier of lft & rgt
+logic signed [31:0] l_result32, r_result32;
+assign l_result32=ROM_out*lft_in;
+assign r_result32=ROM_out*rght_in;
+
+//multiple result increase ff-lft
+wire [31:0]lft_out32;
+always_ff @(posedge clk or negedge rst_n) begin
+		if (!rst_n) 
+			lft_out32<=32'd0;
+		else if(clear_out) //from the cntrl SM
+			lft_out32<=32'd0;
+		else begin
+			if(accum)
+				lft_out32<=l_result32+lft_out32;
+			else
+				lft_out32<=lft_out32;
+		end
+end
+
+//multiple result increase ff-rght
+wire [31:0]rght_out32;
+always_ff @(posedge clk or negedge rst_n) begin
+		if (!rst_n) 
+			rght_out32<=32'd0;
+		else if(clear_out) //from the cntrl SM
+			rght_out32<=32'd0;
+		else begin
+			if(accum)
+				rght_out32<=r_result32+rght_out32;
+			else
+				rght_out32<=rght_out32;
+		end
+end
+
+//state machine
+//input
+//sequencing
+//output
+//addr_rst, addr_inc for the ROM address control
+//cntrl_left_out,clear_out for the output multiplier control
+typedef enum reg {IDLE, INC} state;
+state cur_state, nxt_state;
+
+
+
+always_ff@(posedge clk or negedge rst_n) begin
+	if (!rst_n) cur_state<=IDLE;
+	else cur_state<=nxt_satate;
+end
+
+//SM
+always_comb @() begin
+	//initial 
+	addr_rst=1;//ROM reset control
+	addr_inc=0;//ROM +1 control
+	clear_out=1;
+	accum=0;//out add multiple result control
+	case(cur_state)
+
+	IDLE: begin
+		if (sequencing)
+			nxt_state<=INC;
+	end
+
+	INC:begin
+		addr_inc=1;
+		accum=1;
+		clear_out=0;
+		addr_rst=0;
+
+
+		if (!sequencing)
+			nxt_state=IDLE;
+	end
+	
+	
+	
+	
+	
+	endcase
+
+end
+
+//output 
+wire [15:0]lft_out,rght_out;
+assign lft_out= lft_out32[30:15];
+assign rght_out=rght_out32[30:15];
+
+endmodule
