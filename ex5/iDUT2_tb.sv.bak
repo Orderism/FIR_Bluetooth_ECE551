@@ -1,0 +1,93 @@
+module arith_tb();
+
+reg [7:0] A,B;
+reg SUB;
+reg clk;
+
+wire [7:0] SUM_DF;		// hook to Dataflow version
+wire [7:0] SUM_STRUCT;	// hook to structural version
+
+wire OV_DF;				// signed overflow from dataflow version
+wire OV_STRUCT;			// signed overflow from structural version
+
+////// Instantiate Struct version of DUT ////////
+arith_STRUCT iDUT2(.A(A), .B(B), .SUB(SUB), .SUM(SUM_STRUCT), .OV(OV_STRUCT));
+
+initial begin
+
+
+  /// Case 0 => 0 + 0
+  A = 8'h00;
+  B = 8'h00;
+  SUB = 1'b0;
+  #15;
+  
+  /// Case 1 => Pos + Pos no overflow ///
+  A = 8'h3F;
+  B = 8'h3F;
+  #15;
+   
+  /// Case 2 => Pos + Pos with overflow /// 
+  A = 8'h7F;
+  B = 8'h7F;
+  #15;
+  
+  /// Case 3 => Neg + Neg with no overflow ///
+  A = 8'hFF;
+  B = 8'hFF;
+  #15;
+  
+  /// Case 4 => Neg + Neg with overflow ///
+  A = 8'h80;
+  B = 8'h80;
+  #15;
+  
+  //// Note:  there has been no testing of SUB=1 yet ////
+
+  #15;
+ SUB =1'b1;
+  /// Case 5 => Pos - Neg no overflow ///
+  A = 8'h3F;
+  B = 8'h3F;
+  #15;
+   
+  /// Case 6 => Pos - Neg with overflow /// 
+  A = 8'h7F;
+  B = 8'h80;
+  #15;
+  
+  /// Case 3 => Neg - Pos with no overflow ///
+  A = 8'h3F;
+  B = 8'h01;
+  #15;
+  
+  /// Case 4 => Neg - Pos with overflow ///
+  A = 8'h80;
+  B = 8'h7F;
+  #15;
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  $stop();
+end
+
+  /// add an always block that compares output of two DUTs ///
+
+
+always #5 clk=~clk;//clk signal design
+
+
+
+
+
+endmodule

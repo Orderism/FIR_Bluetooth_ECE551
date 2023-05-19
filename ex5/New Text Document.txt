@@ -1,0 +1,41 @@
+module add8bit_tb();
+reg [7:0] stm_a,stm_b; // used as stimulus for a,b
+wire [7:0] sum_mon; // used to monitor sum
+wire cout_mon,ov_mon; // used to monitor cout & ov
+reg sub;
+
+
+arith iDUT(.A(stm_a),.B(stm_b),.SUB(sub),.SUM(sum_mon),.OV(ov_mon));
+
+
+initial begin
+
+//A+B
+stm_a = 8'h07;
+stm_b = 8'h09;
+sub = 0; // result should be FF
+#5; // wait 5 time units
+
+
+// A-B
+stm_a = 8'hAF; 
+stm_b = 8'h01;
+sub = 1;
+#10
+
+//positive overflow
+stm_a = 8'h7F;//the largest positive number
+stm_b = 8'h7F;//
+sub = 0; // result should be FF
+#15; // wait 5 time units
+
+//negtive overflow
+stm_a = 8'h7F;//the largest positive number
+stm_b = 8'h80;//the smallest negtive number
+sub = 1; // result should be FF
+#20; // wait 5 time units
+
+
+
+end
+endmodule

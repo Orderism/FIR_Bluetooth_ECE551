@@ -1,0 +1,36 @@
+I:/ece551/ex5/FA.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex5/FA.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} I:/ece551/ex5/HA.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex5/HA.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module HA
+
+Top level modules:
+	HA
+
+} {} {}} I:/ece551/ex5/arith_DF.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex5/arith_DF.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module arith_DF
+
+Top level modules:
+	arith_DF
+
+} {} {}} I:/ece551/ex5/arith_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex5/arith_tb.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module arith_tb
+
+Top level modules:
+	arith_tb
+
+} {} {}} I:/ece551/ex5/add8bit-1.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex5/add8bit-1.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module add8bit
+
+Top level modules:
+	add8bit
+
+} {} {}}

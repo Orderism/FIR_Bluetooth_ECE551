@@ -1,0 +1,50 @@
+# Compile of arith_FA was successful.
+# Compile of arith_tb.sv failed with 3 errors.
+# Compile of arith_DF.sv was successful.
+# Compile of arith_STRUCT.bak was successful.
+# Compile of arith_FA was successful.
+# Compile of arith_FA.bak was successful.
+# Compile of arith_STRUCT was successful.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of arith_tb.sv failed with 2 errors.
+# Compile of arith_tb.sv failed with 2 errors.
+# Compile of arith_DF.sv was successful.
+# Compile of arith_STRUCT.bak was successful.
+# Compile of arith_FA was successful.
+# Compile of arith_FA.bak was successful.
+# Compile of arith_STRUCT was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of arith_tb.sv failed with 2 errors.
+# Compile of arith_tb.sv failed with 2 errors.
+# Compile of arith_tb.sv failed with 2 errors.
+# Compile of arith_tb.sv failed with 2 errors.
+# Compile of arith_tb.sv was successful.
+#  Trace back: SaveAs: Duplicate cross-reference for I:/ece551/ex5/arith_DF.sv
+#    >3:eval:1: ::.main_pane.source2.interior.cs.body.srcobj Action .main_pane.source2 saveas
+#    <2:eval:1: ::namespace inscope ::vsimwidgets::Srcobj {.main_pane.source2.interior.cs.body.srcobj Action} .main_pane.source2 saveas
+#    >1:proc:207: ::.vcop Action saveas
+#  Trace back: SaveAs: invalid command name ""
+#    >3:eval:1: ::.main_pane.source.interior.cs.body.srcobj Action .main_pane.source saveas
+#    <2:eval:1: ::namespace inscope ::vsimwidgets::Srcobj {.main_pane.source.interior.cs.body.srcobj Action} .main_pane.source saveas
+#    >1:proc:207: ::.vcop Action saveas
+#  Trace back: SaveAs: invalid command name ""
+#    >3:eval:1: ::.main_pane.source.interior.cs.body.srcobj Action .main_pane.source saveas
+#    <2:eval:1: ::namespace inscope ::vsimwidgets::Srcobj {.main_pane.source.interior.cs.body.srcobj Action} .main_pane.source saveas
+#    >1:proc:207: ::.vcop Action saveas
+# Compile of arith_tb.sv was successful.
+# Compile of arith_DF.sv was successful.
+# Compile of FA.sv was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of arith_tb.sv was successful.
+# Compile of arith_DF.sv was successful.
+# Compile of FA.sv was successful.
+# Compile of HA.sv was successful.
+# Compile of add8bit-1.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of add8bit-1.sv was successful.
+# Compile of add8bit-1.sv was successful.
+# Compile of add8bit-1.sv failed with 1 errors.
+# Compile of add8bit-1.sv was successful.
+# Compile of add8bit-1.sv was successful.
+# Compile of add8bit-1.sv was successful.
+# error on .main_pane.source -closecommand : invalid command name ""

@@ -1,0 +1,47 @@
+module FA_tb();
+logic a;
+logic b;
+logic c_in;
+logic c_out;
+logic sum;
+//fa
+FA FA1(.c_out(c_out), .sum(sum), .a(a), .b(b), .c_in(c_in));
+
+
+
+initial begin
+#10;
+c_in=1'b1;
+a=1'b0;
+b=1'b0;
+
+#10;
+a=1'b0;
+b=1'b1;
+#10;
+a=1'b1;
+b=1'b0;
+#10;
+a=1'b1;
+b=1'b1;
+
+
+
+#10;
+c_in=1'b0;
+a=1'b0;
+b=1'b0;
+
+#10;
+a=1'b0;
+b=1'b1;
+#10;
+a=1'b1;
+b=1'b0;
+#10;
+a=1'b1;
+b=1'b1;
+
+
+end
+endmodule
