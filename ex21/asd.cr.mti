@@ -1,0 +1,127 @@
+/filespace/c/cli649/ece551/ex21/tone_ROM_lft.v {1 {vlog -work work -vopt -stats=none /filespace/c/cli649/ece551/ex21/tone_ROM_lft.v
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module tone_ROM_lft
+
+Top level modules:
+	tone_ROM_lft
+
+} {} {}} /filespace/c/cli649/ece551/ex21/snd_cmd_tb.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/snd_cmd_tb.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module snd_cmd_tb
+
+Top level modules:
+	snd_cmd_tb
+
+} {} {}} /filespace/c/cli649/ece551/ex21/RN52.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/RN52.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module RN52
+
+Top level modules:
+	RN52
+
+} {} {}} /filespace/c/cli649/ece551/ex21/cmdROM.v {1 {vlog -work work -vopt -stats=none /filespace/c/cli649/ece551/ex21/cmdROM.v
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module cmdROM
+
+Top level modules:
+	cmdROM
+
+} {} {}} /filespace/c/cli649/ece551/ex21/snd_cmd.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/snd_cmd.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module snd_cmd
+
+Top level modules:
+	snd_cmd
+
+} {} {}} /filespace/c/cli649/ece551/ex21/PDM.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/PDM.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PDM
+
+Top level modules:
+	PDM
+
+} {} {}} /filespace/c/cli649/ece551/ex21/RN52_cmd_model.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/RN52_cmd_model.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module RN52_cmd_model
+
+Top level modules:
+	RN52_cmd_model
+
+} {} {}} /filespace/c/cli649/ece551/ex21/BT_intf_tb.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/BT_intf_tb.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module BT_intf_tb
+
+Top level modules:
+	BT_intf_tb
+
+} {} {}} /filespace/c/cli649/ece551/ex21/band_scale.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/band_scale.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module band_scale
+
+Top level modules:
+	band_scale
+
+} {} {}} /filespace/c/cli649/ece551/ex21/I2S_serf.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/I2S_serf.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module I2S_serf
+
+Top level modules:
+	I2S_serf
+
+} {} {}} /filespace/c/cli649/ece551/ex21/I2S_Monarch.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/I2S_Monarch.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module I2S_Monarch
+
+Top level modules:
+	I2S_Monarch
+
+} {} {}} /filespace/c/cli649/ece551/ex21/I2S_Mnrch.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/I2S_Mnrch.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module I2S_Mnrch
+
+Top level modules:
+	I2S_Mnrch
+
+} {} {}} /filespace/c/cli649/ece551/ex21/BT_intf.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/BT_intf.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module BT_intf
+
+Top level modules:
+	BT_intf
+
+} {} {}} /filespace/c/cli649/ece551/ex21/PB_release.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/PB_release.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}} /filespace/c/cli649/ece551/ex21/rst_synch.v {1 {vlog -work work -vopt -stats=none /filespace/c/cli649/ece551/ex21/rst_synch.v
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module rst_synch
+
+Top level modules:
+	rst_synch
+
+} {} {}} /filespace/c/cli649/ece551/ex21/resp_ROM.v {1 {vlog -work work -vopt -stats=none /filespace/c/cli649/ece551/ex21/resp_ROM.v
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module resp_ROM
+
+Top level modules:
+	resp_ROM
+
+} {} {}} /filespace/c/cli649/ece551/ex21/tone_ROM_rght.v {1 {vlog -work work -vopt -stats=none /filespace/c/cli649/ece551/ex21/tone_ROM_rght.v
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module tone_ROM_rght
+
+Top level modules:
+	tone_ROM_rght
+
+} {} {}} /filespace/c/cli649/ece551/ex21/UART.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex21/UART.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module UART
+
+Top level modules:
+	UART
+
+} {} {}}

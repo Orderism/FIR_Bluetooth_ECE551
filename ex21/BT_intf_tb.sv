@@ -1,0 +1,53 @@
+module BT_intf_tb();
+logic nxt_n, prev_n, RX, cmd_n, TX, clk, rst_n;// TX AND RX BOTH FROM BT_intf, and connect with RX and TX inRN52
+logic [23:0]rght_chnnl, lft_chnnl;
+logic I2S_data, I2S_sclk, I2S_ws;
+
+//BT_intf
+BT_intf BT1(.nxt_n(nxt_n), .prev_n(prev_n), .RX(RX), .cmd_n(cmd_n), .TX(TX), .clk(clk), .rst_n(rst_n));
+
+//RN_52
+// snd_cmd(cmd_start, send, cmd_len, clk, rst_n, resp_rcvd, TX, RX);
+RN52 BT_RN_52(.cmd_n(cmd_n), .RX(TX), .TX(RX), .I2S_sclk(I2S_sclk), .I2S_ws(I2S_ws), .I2S_data(I2S_data), .clk(clk), .RST_n(rst_n));
+
+//I2S_serf
+//I have wrote the vld ff inside the I2S_serf.v at the end
+I2S_serf I2S(.clk(clk), .rst_n(rst_n), .vld(vld), .rght_chnnl(rght_chnnl), .lft_chnnl(lft_chnnl), .I2S_data(I2S_data),
+		  .I2S_ws(I2S_ws), .I2S_sclk(I2S_sclk));
+
+
+
+initial begin
+clk=0;
+nxt_n=0;
+prev_n=0;
+rst_n=0;
+
+@(posedge clk);
+rst_n=1;
+
+repeat (300000) @(posedge clk);
+//nxt inpulse
+@(posedge clk);
+nxt_n=1;
+@(posedge clk);
+nxt_n=0;
+
+repeat (300000) @(posedge clk);
+//prev inpulse
+@(posedge clk);
+prev_n=1;
+@(posedge clk);
+prev_n=0;
+
+repeat (500000) @(posedge clk);
+
+$stop();
+end
+
+
+
+always #5 clk=~clk;
+
+
+endmodule
