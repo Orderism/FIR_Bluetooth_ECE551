@@ -1,0 +1,15 @@
+I:/ece551/HW4/hw4_testbench.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/HW4/hw4_testbench.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module hw4_testbench
+
+Top level modules:
+	hw4_testbench
+
+} {} {}} I:/ece551/HW4/hw4.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/HW4/hw4.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module hw4
+
+Top level modules:
+	hw4
+
+} {} {}}

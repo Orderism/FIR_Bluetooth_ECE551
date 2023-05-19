@@ -1,0 +1,18 @@
+
+module hw4(
+input wire d,
+input wire clk,
+output wire q
+);
+
+
+wire md;
+wire mq;
+wire sd;
+
+
+assign md=(clk)? ~q:md;
+assign mq=~md;
+assign sd=(~clk)? ~mq:sd;
+assign q=~sd;
+endmodule

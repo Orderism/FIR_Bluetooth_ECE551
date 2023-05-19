@@ -1,0 +1,64 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/cli649/Downloads
+T_opt
+!s110 1675730342
+V[THcaOd3PEOAB`6J@TO<43
+04 13 4 work hw4_testbench fast 0
+=1-6c2b59d198f7-63e19da6-138-22e4
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OE;O;10.3c;59
+vhw4
+Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1675730323
+!i10b 1
+!s100 ICa?PHPc>JA>1lgF7_@^;2
+IF?5?`LaW15mzF@N;0EfX32
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 hw4_sv_unit
+S1
+Z2 dI:/ece551/HW4
+w1675730320
+8I:/ece551/HW4/hw4.sv
+FI:/ece551/HW4/hw4.sv
+L0 2
+Z3 OE;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1675730323.520000
+!s107 I:/ece551/HW4/hw4.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/HW4/hw4.sv|
+!i113 0
+Z4 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vhw4_testbench
+R0
+!s110 1675729978
+!i10b 1
+!s100 ^P2_4UI@T2@@L9oEUaf8a1
+IKTL=OSgV;C7jGgeo7GNd60
+R1
+!s105 hw4_testbench_sv_unit
+S1
+R2
+w1675729973
+8I:/ece551/HW4/hw4_testbench.sv
+FI:/ece551/HW4/hw4_testbench.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1675729978.812000
+!s107 I:/ece551/HW4/hw4_testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/HW4/hw4_testbench.sv|
+!i113 0
+R4
