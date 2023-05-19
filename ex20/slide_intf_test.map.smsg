@@ -1,0 +1,5 @@
+Info (10281): Verilog HDL Declaration information at SPI_mnrch.sv(10): object "done" differs only in case from object "DONE" in the same scope File: I:/ece551/ex20/SPI_mnrch.sv Line: 10
+Info (10281): Verilog HDL Declaration information at rst_synch.v(2): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/ex20/rst_synch.v Line: 2
+Info (10281): Verilog HDL Declaration information at A2D_intf.sv(27): object "cmd" differs only in case from object "CMD" in the same scope File: I:/ece551/ex20/A2D_intf.sv Line: 27
+Info (10281): Verilog HDL Declaration information at A2D_intf.sv(26): object "done" differs only in case from object "DONE" in the same scope File: I:/ece551/ex20/A2D_intf.sv Line: 26
+Info (10281): Verilog HDL Declaration information at slide_intf_test.sv(3): object "RST_n" differs only in case from object "rst_n" in the same scope File: I:/ece551/ex20/slide_intf_test.sv Line: 3

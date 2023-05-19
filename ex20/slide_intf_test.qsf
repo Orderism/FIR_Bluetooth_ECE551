@@ -1,0 +1,78 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY "slide_intf_test"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:46:05 MARCH 01,2015"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A15 -to LEDs[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[0]
+set_location_assignment PIN_A13 -to LEDs[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[1]
+set_location_assignment PIN_B13 -to LEDs[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[2]
+set_location_assignment PIN_A11 -to LEDs[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[3]
+set_location_assignment PIN_D1 -to LEDs[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[4]
+set_location_assignment PIN_F3 -to LEDs[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[5]
+set_location_assignment PIN_B1 -to LEDs[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[6]
+set_location_assignment PIN_L3 -to LEDs[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDs[7]
+
+#============================================================
+# KEY
+#============================================================
+set_location_assignment PIN_J15 -to RST_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RST_n
+set_location_assignment PIN_E1 -to NXT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to NXT
+
+#============================================================
+# ADC
+#============================================================
+set_location_assignment PIN_A10 -to SS_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SS_n
+set_location_assignment PIN_B10 -to MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MOSI
+set_location_assignment PIN_B14 -to SCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SCLK
+set_location_assignment PIN_A9 -to MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MISO
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE PB_release.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SPI_mnrch.sv
+set_global_assignment -name VERILOG_FILE rst_synch.v
+set_global_assignment -name SYSTEMVERILOG_FILE A2D_intf.sv
+set_global_assignment -name SYSTEMVERILOG_FILE slide_intf.sv
+set_global_assignment -name SYSTEMVERILOG_FILE slide_intf_test.sv
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,55 @@
+module slide_intf_test(NXT, RST_n, LEDs, SS_n, SCLK, MOSI, MISO, clk);
+//switch side input
+input logic NXT, RST_n;
+input clk;
+
+//LED side output LEDs
+logic [11:0]LED;
+output logic [7:0]LEDs;
+assign LEDs=  LED[11:4];
+
+//Slide_intf
+logic rst_n,clk;
+output logic SS_n, SCLK, MOSI;
+input logic MISO;
+//module slide_intf(POT_LP, POT_B1, POT_B2, POT_B3, POT_HP, VOLUME, SS_n, SCLK, MOSI, MISO, clk, rst_n);
+logic [11:0]POT_LP, POT_B1, POT_B2, POT_B3, POT_HP, VOLUME;
+slide_intf slin(.POT_LP(POT_LP), .POT_B1(POT_B1), .POT_B2(POT_B2), .POT_B3(POT_B3), .POT_HP(POT_HP), .VOLUME(VOLUME), .SS_n(SS_n), .SCLK(SCLK), .MOSI(MOSI), .MISO(MISO), .clk(clk), .rst_n(rst_n));
+
+
+//PB_release
+logic released;
+
+////module PB_release(PB, clk, rst_n,  released);
+PB_release PBL(.PB(NXT), .clk(clk), .rst_n(rst_n), .released(released));
+
+//reset_synch
+//module reset_synch(RST_n, rst_n, clk);
+rst_synch RSS( .clk(clk), .rst_n(rst_n), .RST_n(RST_n));
+
+
+//Counter
+logic [2:0]cnt;
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) cnt<=3'd0;
+    else if (released) begin
+	 if (cnt==3'd5) cnt<=3'd0;    
+	 else cnt<=cnt+3'd1;
+	 end
+end
+
+
+
+
+//mux
+
+assign LED=(cnt==3'd0)? POT_LP:
+            (cnt==3'd1)? POT_B1:
+            (cnt==3'd2)? POT_B2:
+            (cnt==3'd3)? POT_B3:
+            (cnt==3'd4)? POT_HP:
+            (cnt==3'd5)? VOLUME
+           :12'bxxxx_xxxx_xxxx;
+
+endmodule
+

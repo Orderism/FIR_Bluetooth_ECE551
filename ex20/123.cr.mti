@@ -1,0 +1,71 @@
+I:/ece551/ex20/rst_synch.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex20/rst_synch.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module rst_synch
+
+Top level modules:
+	rst_synch
+
+} {} {}} I:/ece551/ex20/PB_release.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex20/PB_release.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}} I:/ece551/ex20/A2D_intf.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece551\ex20\A2D_intf.sv}
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module A2D_intf
+
+Top level modules:
+	A2D_intf
+
+} {} {}} I:/ece551/ex20/SPI_mnrch.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex20/SPI_mnrch.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module SPI_mnrch
+
+Top level modules:
+	SPI_mnrch
+
+} {} {}} I:/ece551/ex20/reset_synch.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex20/reset_synch.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module reset_synch
+
+Top level modules:
+	reset_synch
+
+} {} {}} I:/ece551/ex20/A2D_with_Pots.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex20/A2D_with_Pots.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module A2D_with_Pots
+
+Top level modules:
+	A2D_with_Pots
+
+} {} {}} I:/ece551/ex20/slide_intf_test.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece551\ex20\slide_intf_test.sv}
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module slide_intf_test
+
+Top level modules:
+	slide_intf_test
+
+} {} {}} I:/ece551/ex20/slide_intf.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex20/slide_intf.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module slide_intf
+
+Top level modules:
+	slide_intf
+
+} {} {}} I:/ece551/ex20/EX20TB.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece551\ex20\EX20TB.sv}
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ex20tb
+
+Top level modules:
+	ex20tb
+
+} {} {}} I:/ece551/ex20/rst_synch.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece551\ex20\rst_synch.sv}
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module rst_synch
+
+Top level modules:
+	rst_synch
+
+} {} {}}

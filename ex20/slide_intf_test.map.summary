@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 14 11:48:01 2023
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : slide_intf_test
+Top-level Entity Name : slide_intf_test
+Family : Cyclone IV E
+Total logic elements : 172
+    Total combinational functions : 107
+    Dedicated logic registers : 114
+Total registers : 114
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

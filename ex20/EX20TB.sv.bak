@@ -1,0 +1,29 @@
+module ex20tb();
+//INPUT
+logic NXT, RST_n, MISO,clk;
+
+//OUTPUT
+logic   SS_n, SCLK, MOSI;
+logic [7:0]LEDs;
+// slide_intf_test asdas(NXT, RST_n, LEDs, SS_n, SCLK, MOSI, MISO, clk);
+slide_intf_test asdas(.NXT(NXT), .RST_n(RST_n), .LEDs(LEDs), .SS_n(SS_n), .SCLK(SCLK), .MOSI( MOSI), .MISO(MISO), .clk(clk));
+
+
+initial begin
+NXT=0;
+RST_n=0;
+clk=0;
+MISO=0;
+
+#10
+RST_n=1;
+MISO=1;
+
+end
+always#5 clk=~clk;
+always#40 NXT=~NXT;
+always #3 MISO=~MISO;
+endmodule
+
+
+
