@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ProgramData/App-V/2191B702-5279-4048-91BA-BCF8F2A20B49/3C5B5D32-C303-48A2-8738-F357EDE80167/Root/examples
+T_opt
+!s110 1680538264
+VQShYz05E1[m^@4fL_aS<V1
+Z1 04 17 4 work band_scale_rnd_tb fast 0
+=1-6c2b59d19861-642afa98-98-3ee4
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OE;O;10.3c;59
+T_opt1
+!s110 1680537729
+Vknkg@I95AXS0:knAFJoUB3
+R1
+=1-6c2b59d19861-642af880-1c9-2118
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R2
+R0
+vband_scale
+Z3 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1680537707
+!i10b 1
+!s100 [lLe::_:[9nkNhIOBQhFn2
+INIGP=FIleW@9b`BOlgHPA3
+Z4 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 band_scale_sv_unit
+S1
+Z5 dI:/ece551/ex17
+w1676055800
+8I:/ece551/ex17/band_scale.sv
+FI:/ece551/ex17/band_scale.sv
+L0 1
+Z6 OE;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1680537707.162000
+!s107 I:/ece551/ex17/band_scale.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex17/band_scale.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vband_scale_rnd_tb
+R3
+!s110 1680538254
+!i10b 1
+!s100 CbF3^Qz7^T0feJ]U69gd73
+I1j>9T9dDY<oGi7k]1;W`=2
+R4
+!s105 band_scale_rnd_tb_sv_unit
+S1
+R5
+w1680538251
+8I:/ece551/ex17/band_scale_rnd_tb.sv
+FI:/ece551/ex17/band_scale_rnd_tb.sv
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1680538254.352000
+!s107 I:/ece551/ex17/band_scale_rnd_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex17/band_scale_rnd_tb.sv|
+!i113 0
+R7
+vband_scale_tb
+R3
+!s110 1680537708
+!i10b 1
+!s100 `@8Xjlbf[X0:cc8_Q]RSJ2
+I`j[Z1GAKb50nTd6aZ<gR82
+R4
+!s105 bandscale_tb_sv_unit
+S1
+R5
+w1678858717
+8I:/ece551/ex17/bandscale_tb.sv
+FI:/ece551/ex17/bandscale_tb.sv
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1680537707.874000
+!s107 I:/ece551/ex17/bandscale_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex17/bandscale_tb.sv|
+!i113 0
+R7
+vsat
+R3
+!s110 1680537706
+!i10b 1
+!s100 W><jjNULm5QeUC?GSH?zb3
+I0PdbPZKMDmI^dizk4ZPOL1
+R4
+!s105 sat_sv_unit
+S1
+R5
+w1676055767
+8I:/ece551/ex17/sat.sv
+FI:/ece551/ex17/sat.sv
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1680537706.764000
+!s107 I:/ece551/ex17/sat.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex17/sat.sv|
+!i113 0
+R7

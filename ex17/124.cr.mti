@@ -1,0 +1,29 @@
+I:/ece551/ex17/sat.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex17/sat.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module sat
+
+Top level modules:
+	sat
+
+} {} {}} I:/ece551/ex17/band_scale.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex17/band_scale.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module band_scale
+
+Top level modules:
+	band_scale
+
+} {} {}} I:/ece551/ex17/band_scale_rnd_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex17/band_scale_rnd_tb.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module band_scale_rnd_tb
+
+Top level modules:
+	band_scale_rnd_tb
+
+} {} {}} I:/ece551/ex17/bandscale_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex17/bandscale_tb.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module band_scale_tb
+
+Top level modules:
+	band_scale_tb
+
+} {} {}}
