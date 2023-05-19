@@ -1,0 +1,30 @@
+/filespace/c/cli649/ece551/ex13/A2D_tb.sv {0 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex13/A2D_tb.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module A2D_tb
+** Error (suppressible): /filespace/c/cli649/ece551/ex13/A2D_tb.sv(14): (vlog-2388) 'MISO' already declared in this scope (A2D_tb) at /filespace/c/cli649/ece551/ex13/A2D_tb.sv(4).
+** Error (suppressible): /filespace/c/cli649/ece551/ex13/A2D_tb.sv(14): (vlog-2388) 'MOSI' already declared in this scope (A2D_tb) at /filespace/c/cli649/ece551/ex13/A2D_tb.sv(4).
+** Error (suppressible): /filespace/c/cli649/ece551/ex13/A2D_tb.sv(14): (vlog-2388) 'a2d_SS_n' already declared in this scope (A2D_tb) at /filespace/c/cli649/ece551/ex13/A2D_tb.sv(4).
+** Error (suppressible): /filespace/c/cli649/ece551/ex13/A2D_tb.sv(14): (vlog-2388) 'SCLK' already declared in this scope (A2D_tb) at /filespace/c/cli649/ece551/ex13/A2D_tb.sv(4).
+
+} {} {}} /filespace/c/cli649/ece551/ex13/SPI_ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex13/SPI_ADC128S.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module SPI_ADC128S
+
+Top level modules:
+	SPI_ADC128S
+
+} {} {}} /filespace/c/cli649/ece551/ex13/ADC128S.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex13/ADC128S.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module ADC128S
+
+Top level modules:
+	ADC128S
+
+} {} {}} /filespace/c/cli649/ece551/ex13/SPI_mnrch.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex13/SPI_mnrch.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module SPI_mnrch
+
+Top level modules:
+	SPI_mnrch
+
+} {} {}}

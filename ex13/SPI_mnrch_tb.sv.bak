@@ -1,0 +1,106 @@
+module SPI_mnrch_tb();
+reg clk, rst_n, SS_n, SCLK, MOSI, done;
+wire MISO;
+reg [15:0] cmd, resp;
+reg snd;
+
+
+//initantiate DUT
+//module SPI_mnrch (cmd, clk, rst_n, snd, SS_n, SCLK, MOSI, MISO, done, resp);
+//output MOSI SCLK SS_n done resp
+//input  clk, rst_n, MISO, wrt, cmd 
+SPI_mnrch mn(.cmd(cmd),.clk(clk), .rst_n(rst_n), .snd(snd), .SS_n(SS_n), .SCLK(SCLK), .MOSI(MOSI),
+             .MISO(MISO), .done(done), .resp(resp));
+
+//initantiate ADC128S
+//module ADC128S(clk,rst_n,SS_n,SCLK,MISO,MOSI);
+//output MISO
+ADC128S iA2D(.clk(clk), .rst_n(rst_n), .SS_n(SS_n), .SCLK(SCLK), .MISO(MISO), .MOSI(MOSI));
+
+initial begin
+clk=0;
+rst_n=0;
+snd=0;
+//cmd = read channel 1
+cmd={2'b00, 3'b001, 11'h000};
+//deassert reset after the 1st clk
+@(posedge clk);
+@(negedge clk);
+rst_n=1;// no more rest between each read, or it will be clear the ADC128 state machine
+repeat(10) @(posedge clk);
+@(negedge clk);
+snd=1;
+@(negedge clk);
+snd=0;
+@(posedge done);
+begin//response self-checking
+if(resp!=16'h0C00) begin
+$display ("ERR: Expected 0xC01 for 1st read");
+end
+else begin
+$display ("I am NOT the lord of rings!");
+end
+end
+
+//cmd = re-read channel 1
+@(posedge clk);
+@(negedge clk);
+cmd={2'b00, 3'b001, 11'h000};
+@(negedge clk);
+snd=1;
+@(negedge clk);
+snd=0;
+@(posedge done);// wait for the response of the initial set
+begin//response self-checking
+if(resp!=16'h0C01) begin
+$display ("ERR: Expected 0xC01 for 2nd read");
+end
+else begin
+$display ("I am NOT the Indiana Jones!");
+end
+end
+
+
+// cmd = read channel 4
+@(posedge clk);
+@(negedge clk);
+cmd={2'b00, 3'b100, 11'h000};
+@(negedge clk);
+snd=1;
+@(negedge clk);
+snd=0;
+@(posedge done);// wait for the response of the initial set
+begin//response self-checking
+if(resp!=16'h0BF1) begin
+$display ("ERR: Expected 0XBF1 for 3rd read");
+end
+else begin
+$display ("I was JUST an engineer know nothing about VLSI!");
+end
+end
+
+//cmd = re-read channel 4
+@(posedge clk);
+@(negedge clk);
+cmd={2'b00, 3'b100, 11'h000};
+@(negedge clk);
+snd=1;
+@(negedge clk);
+snd=0;
+@(posedge done);// wait for the response of the initial set
+begin//response self-checking
+if(resp!=16'h0BF4) begin
+$display ("ERR: Expected 0xBF4 for 4th read");
+end
+else begin
+$display ("But I WORK HARD!!!!!!");
+end
+end
+
+repeat(2000)@(posedge clk);
+$stop;
+
+end
+always #5 clk<=~clk;
+
+endmodule
