@@ -1,0 +1,54 @@
+read_file -format sverilog {SPI_mnrch.sv}
+current_design SPI_mnrch
+
+#Defines a clock of 250 MHZ frequency and sources it to back
+create_clock -name "clk" -period 4 {clk}
+
+#Performs a set don't touch on the clock network
+set_dont_touch_network [find port clk]
+set prim_inputs [remove_from_collection [all_inputs] [find port clk]]
+
+#Defines input delays of 0.3ns on all inputs other than clk
+set_input_delay -clock clk 0.3 $prim_inputs
+
+#Defines a drive strength equivalent to a 1-input nand of size 2 from the Synopys 32nm library (NAND2X1_LVT) for all inputs except clk and rst_n
+set_driving_cell -lib_cell NAND2X1_LVT -library saed32lvt_tt0p85v25c $prim_inputs
+
+#Defines an output delay of 0.6ns for all outputs
+set_output_delay -clock clk 0.6 [all_outputs]
+
+#Defines a 50fF load on all outputs
+set_load 50 [all_outputs] 
+
+
+#Sets a max transition time of 0.15ns on all nodes
+set_max_transition 0.15 [current_design]
+
+
+#Employs the SYnopys 32nm wire load model for a block of size 16000 sq microns
+SET_WIRE_LOAD_MODEL -name 16000 -library saed32lvt_tt0p85v25c 
+
+#Compiles, then flattens the design so it has no hierarchy and compiles again
+compile -map_effort HIGH
+check_design
+ungroup -all -flatten
+#2nd Compile
+compile -map_effort medium
+
+#Produces a min_delay report
+report_timing -path full -delay min
+
+#Produces a max_delay report
+report_timing -path full -delay max
+
+#Produces an area report
+report_area > area.rpt
+
+#Flattens the design so it has no hierarchy
+check_Design
+ungroup -all -flatten
+
+
+#Writes out the gate level verilog netlist (SPI_mnrch.vg)
+report_area > SPI_mnrch_area.txt
+write -format verilog SPI_mnrch -output SPI_mnrch.vg

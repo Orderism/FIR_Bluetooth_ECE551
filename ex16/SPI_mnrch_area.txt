@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : SPI_mnrch
+Version: T-2022.03-SP3
+Date   : Fri Mar 31 14:04:56 2023
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_tt0p85v25c (File: /cae/apps/data/saed32_edk-2022/lib/stdcell_lvt/db_nldm/saed32lvt_tt0p85v25c.db)
+
+Number of ports:                           40
+Number of nets:                           167
+Number of cells:                          136
+Number of combinational cells:             96
+Number of sequential cells:                40
+Number of macros/black boxes:               0
+Number of buf/inv:                         31
+Number of references:                      24
+
+Combinational area:                248.552834
+Buf/Inv area:                       74.210046
+Noncombinational area:             283.370565
+Macro/Black Box area:                0.000000
+Net Interconnect area:             114.752256
+
+Total cell area:                   531.923399
+Total area:                        646.675655
+1
