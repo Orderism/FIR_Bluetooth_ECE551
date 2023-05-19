@@ -1,0 +1,15 @@
+/filespace/c/cli649/ece551/ex9/PDM_tb.v {1 {vlog -work work -vopt -stats=none /filespace/c/cli649/ece551/ex9/PDM_tb.v
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PDM_tb
+
+Top level modules:
+	PDM_tb
+
+} {} {}} /filespace/c/cli649/ece551/ex9/PDM.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex9/PDM.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PDM
+
+Top level modules:
+	PDM
+
+} {} {}}
