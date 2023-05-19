@@ -1,0 +1,10 @@
+module reset_synch(RST_n, rst_n, clk);
+input RST_n;
+input clk;
+output rst_n;
+
+
+
+
+
+endmodule

@@ -1,0 +1,22 @@
+/filespace/c/cli649/ece551/ex10/reset_synch.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex10/reset_synch.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module reset_synch
+
+Top level modules:
+	reset_synch
+
+} {} {}} /filespace/c/cli649/ece551/ex10/Ex10_tb.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex10/Ex10_tb.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module Ex10_tb
+
+Top level modules:
+	Ex10_tb
+
+} {} {}} /filespace/c/cli649/ece551/ex10/PB_release.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/c/cli649/ece551/ex10/PB_release.sv
+QuestaSim vlog 2021.2_2 Compiler 2021.06 Jun 19 2021
+-- Compiling module PB_release
+
+Top level modules:
+	PB_release
+
+} {} {}}

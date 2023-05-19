@@ -1,0 +1,29 @@
+module Ex10_tb();
+logic PB, RST_n;
+reg clk;
+wire released;
+
+//module PB_release(PB, clk, rst_n, released);
+PB_release ASD(.PB(PB), .clk(clk), .rst_n(rst_n), .released(released));
+
+initial begin
+PB<=1'b0;
+RST_n<=1'b0;
+clk<=1'b0;
+
+#10
+//PB<=1'b1;
+//RST_n<=1'b1;
+
+//#10
+//PB<=1'b0;
+
+
+#20
+$stop();
+end
+
+always#5 clk=~clk;
+always#8 RST_n<=~RST_n;
+always#17 PB=~PB; 
+endmodule

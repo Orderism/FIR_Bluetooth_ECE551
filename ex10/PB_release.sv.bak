@@ -1,0 +1,34 @@
+module PB_release(PB, clk, rst_n, RST_n, released);
+input PB;
+input rst_n;
+input logic RST_n, clk;//from tb
+output released;
+
+//SEQUENCIAL LOGIC
+reg pre1, pre2,  pre3;
+always @(negedge clk or negedge rst_n) begin
+
+if (!rst_n) begin
+pre1<=1'b0;
+pre2<=1'b0;
+pre3<=1'b0;
+end
+
+else begin
+PB<=pre1;
+pre1<=pre2;
+pre2<=pre3;
+end
+
+end
+
+assign released=(~pre3) & pre2;
+
+wire clk2;
+assign clk2 =clk;
+
+
+
+reset_synch rs(.RST_n(RST_N), .clk(clk2), .rst_n(rst_n));
+
+endmodule
