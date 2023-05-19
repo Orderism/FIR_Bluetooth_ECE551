@@ -1,0 +1,36 @@
+I:/ece551/ex15/I2S_Serf_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex15/I2S_Serf_tb.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module I2S_Serf_tb
+
+Top level modules:
+	I2S_Serf_tb
+
+} {} {}} I:/ece551/ex15/tone_ROM_rght.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex15/tone_ROM_rght.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module tone_ROM_rght
+
+Top level modules:
+	tone_ROM_rght
+
+} {} {}} I:/ece551/ex15/tone_ROM_lft.v {1 {vlog -work work -vopt -stats=none I:/ece551/ex15/tone_ROM_lft.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module tone_ROM_lft
+
+Top level modules:
+	tone_ROM_lft
+
+} {} {}} I:/ece551/ex15/I2S_Serf.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex15/I2S_Serf.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module I2S_Serf
+
+Top level modules:
+	I2S_Serf
+
+} {} {}} I:/ece551/ex15/I2S_Monarch.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece551/ex15/I2S_Monarch.sv
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module I2S_Monarch
+
+Top level modules:
+	I2S_Monarch
+
+} {} {}}

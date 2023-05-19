@@ -1,0 +1,171 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_2 2021.06, Jun 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/filespace/c/cli649/ece551/ex15
+T_opt
+!s110 1680541384
+V`FAk<OfY9mL@lLP8=EXOJ0
+Z2 04 11 4 work I2S_Serf_tb fast 0
+=1-6c2b59d19861-642b06c7-2af-920
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OE;O;10.3c;59
+T_opt1
+!s110 1679949414
+Vc>ln]Ij4BI1g1Vo96I74H2
+R2
+=1-000ae431a4f1-6421fe65-e24a6-3beb6d
+Z4 !s124 OEM100
+R3
+Z5 tCvgOpt 0
+n@_opt1
+Z6 OE;O;2021.2_2;73
+R1
+T_opt2
+!s110 1679946040
+Vm0;1E1VP9bH4n[<jY72nR2
+04 8 4 work I2S_Serf fast 0
+=1-000ae431a4f1-6421f138-11177-3adaa7
+R4
+R3
+R5
+n@_opt2
+R6
+R1
+vI2S_Monarch
+Z7 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z8 !s110 1680541366
+!i10b 1
+!s100 P3D52<JZ_0mN[N_OM>fR[2
+IkhaJ?SA28A;XenD1k0:4c3
+Z9 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 I2S_Monarch_sv_unit
+S1
+Z10 dI:/ece551/ex15
+w1675186492
+8I:/ece551/ex15/I2S_Monarch.sv
+FI:/ece551/ex15/I2S_Monarch.sv
+L0 1
+Z11 OE;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1680541366.708000
+!s107 I:/ece551/ex15/I2S_Monarch.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex15/I2S_Monarch.sv|
+!i113 0
+Z12 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@i2@s_@monarch
+vI2S_Serf
+R7
+Z13 !s110 1680541367
+!i10b 1
+!s100 EmWA==0TEeBFVMOg2HOoA1
+IG^<6UIW;@[FZZMM]9@lYh3
+R9
+!s105 I2S_Serf_sv_unit
+S1
+R10
+w1680541181
+8I:/ece551/ex15/I2S_Serf.sv
+FI:/ece551/ex15/I2S_Serf.sv
+L0 1
+R11
+r1
+!s85 0
+31
+!s108 1680541367.071000
+!s107 I:/ece551/ex15/I2S_Serf.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex15/I2S_Serf.sv|
+!i113 0
+R12
+n@i2@s_@serf
+vI2S_Serf_tb
+R7
+R13
+!i10b 1
+!s100 aj>UUV84>Qh]3Kh`4a@^C1
+I5j:bGX`CU2Q`flON0KoKa2
+R9
+!s105 I2S_Serf_tb_sv_unit
+S1
+R10
+w1679947312
+8I:/ece551/ex15/I2S_Serf_tb.sv
+FI:/ece551/ex15/I2S_Serf_tb.sv
+L0 1
+R11
+r1
+!s85 0
+31
+!s108 1680541367.417000
+!s107 I:/ece551/ex15/I2S_Serf_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece551/ex15/I2S_Serf_tb.sv|
+!i113 0
+R12
+n@i2@s_@serf_tb
+vtone_ROM_lft
+R13
+!i10b 1
+!s100 1H^IMVM>V_fkZ<YB6:`X;1
+I45IioWPF7R<GCOE:0Rbl:0
+R9
+R10
+w1553010354
+8I:/ece551/ex15/tone_ROM_lft.v
+FI:/ece551/ex15/tone_ROM_lft.v
+L0 1
+R11
+r1
+!s85 0
+31
+!s108 1680541367.778000
+!s107 I:/ece551/ex15/tone_ROM_lft.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/ex15/tone_ROM_lft.v|
+!i113 0
+Z14 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+ntone_@r@o@m_lft
+vtone_ROM_rght
+R8
+!i10b 1
+!s100 <zn8]6R;^fB<gQnY=@FJ>2
+IAaKS]ln=KH]?>oiF>Rz<T1
+R9
+R10
+w1553010554
+8I:/ece551/ex15/tone_ROM_rght.v
+FI:/ece551/ex15/tone_ROM_rght.v
+L0 1
+R11
+r1
+!s85 0
+31
+!s108 1680541366.367000
+!s107 I:/ece551/ex15/tone_ROM_rght.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece551/ex15/tone_ROM_rght.v|
+!i113 0
+R14
+ntone_@r@o@m_rght

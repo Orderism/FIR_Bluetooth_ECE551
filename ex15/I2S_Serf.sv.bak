@@ -1,0 +1,208 @@
+module I2S_Serf(
+input clk,rst_n,
+input I2S_sclk,
+input I2S_ws,// when ws goes down, after 1 SCLK, the 
+input I2S_data,
+output [23:0]lft_chnnl,
+output [23:0]rght_chnnl,
+output logic vld
+);
+
+
+reg SCLK_temp1, SCLK_temp2;
+reg WS_temp1, WS_temp2;
+reg clr_cnt;//clr 24b cnt for the switching from LS to RS
+logic shft;//shifter enable;
+
+//SCLK posedge & WS negedge clk detect
+always_ff@(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        SCLK_temp1<=0;
+        SCLK_temp2<=0;
+        WS_temp1<=0;
+        WS_temp2<=0;
+    end
+    else begin
+        WS_temp1<=I2S_ws;
+        WS_temp2<=WS_temp1;
+        SCLK_temp1<=I2S_sclk;
+        SCLK_temp2<=SCLK_temp1;
+    end
+end
+assign sclk_rise = (I2S_sclk) & (~SCLK_temp1);
+assign sclk_fall = (~I2S_sclk) & (SCLK_temp1);
+assign ws_fall = (~WS_temp1) & (WS_temp2);
+assign ws_rise = (WS_temp1) & (~WS_temp2);
+
+//SCLK delay 1 cnter, work for the ws switching delay
+reg sclk_dl_cnt;
+reg sclk_dl_done;
+always_ff@(posedge clk or negedge rst_n) begin
+    if(!rst_n) begin
+        sclk_dl_cnt<=0;
+        sclk_dl_done<=0;
+    end
+    else if (sclk_rise) begin
+        if (sclk_dl_cnt) begin
+            sclk_dl_cnt<=0;
+            sclk_dl_done<=1;
+        end
+        else begin
+            sclk_dl_cnt<=sclk_dl_cnt+1;
+            sclk_dl_done<=0;
+        end 
+    end
+    else begin
+        sclk_dl_cnt<=sclk_dl_cnt;
+        sclk_dl_done<=0;
+    end
+end
+
+
+
+
+//clr_cnt
+logic [4:0]bit_cnt24;
+logic cnt24_done;
+logic L_done, R_done;//left shift done & right shift done
+
+always_ff @(posedge clk or negedge rst_n) begin
+    if(~rst_n) begin
+    bit_cnt24<=5'd0;
+    cnt24_done<=0;
+    end
+
+    else if (clr_cnt) begin
+        bit_cnt24<=5'd0;
+    end
+
+    else if((~clr_cnt) & sclk_rise) begin//state machine give it the start signal
+        if (bit_cnt24==5'd23) begin
+        bit_cnt24=5'd0;
+        cnt24_done<=1;
+        end
+        else begin
+        bit_cnt24<=bit_cnt24+5'd1;
+        cnt24_done<=0;
+        end
+    end
+   
+    else begin
+        bit_cnt24<=bit_cnt24;
+        cnt24_done<=0;
+    end
+end
+assign L_done=cnt24_done & I2S_ws;
+assign R_done=cnt24_done & ~I2S_ws;
+
+
+
+//SM combinational logic
+typedef enum reg[2:0] {IDLE, WAIT_L, LS, WAIT_R, RS, DONE} state;
+state cur_state, nxt_state;
+
+
+//SM transmission
+always_ff @(posedge clk or negedge rst_n) begin
+    if (~rst_n) begin
+    cur_state<=IDLE;    
+    end
+    else begin
+    cur_state<=nxt_state;
+    end
+end
+
+
+
+
+
+
+
+//SM
+always_comb begin
+    nxt_state=cur_state;
+    shft=0;
+    vld=0;
+    clr_cnt=0;
+
+
+
+
+    case(cur_state)
+    IDLE: begin//IDLE get the ws fall and goto WAIT
+        shft=0;
+        clr_cnt=1;
+        if (ws_fall) nxt_state=WAIT_L;
+    end
+
+    WAIT_L: begin//WAIT get the 2nd SCLK and goto LS
+        shft=1;
+        if (sclk_dl_done) begin 
+            nxt_state=LS;
+            vld=1;
+        end        
+    end
+
+    LS: begin//LS finish 24 bits transmission and goto RS
+        shft=1;
+        if (ws_fall) begin
+            nxt_state=WAIT_R;
+        end
+    end
+
+    WAIT_R: begin
+        shft=1;
+        if (sclk_dl_done) nxt_state=RS;
+    end
+
+    RS: begin//RS finish 24 bits transmission and done
+        shft=1;
+    if (ws_fall) begin
+        nxt_state=WAIT_L;
+    end
+    end   
+    
+    endcase
+end
+
+
+
+
+
+//shifter 
+reg [47:0]shft_reg;
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        shft_reg<=48'd0;
+    end
+    else if (sclk_fall) begin
+        shft_reg<={shft_reg[46:0],I2S_data};
+    end
+    else begin 
+        shft_reg<=shft_reg;
+    end
+end
+
+//vld=1, keep chnnl output 1 system clk
+logic [23:0]lft_chnnl_reg,rght_chnnl_reg;
+
+always_ff @(posedge clk or negedge rst_n) begin
+    if(!rst_n) begin
+        lft_chnnl_reg<=24'd0;
+        rght_chnnl_reg<=24'd0;
+    end
+    else if (vld) begin
+        lft_chnnl_reg<=shft_reg[47:24];
+        rght_chnnl_reg<=shft_reg[23:0];
+    end
+    else begin
+        lft_chnnl_reg<=lft_chnnl_reg;
+        rght_chnnl_reg<=rght_chnnl_reg;
+    end
+end
+
+assign lft_chnnl=lft_chnnl_reg;
+assign rght_chnnl=rght_chnnl_reg;
+
+
+endmodule
